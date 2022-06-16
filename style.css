@@ -1,199 +1,193 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
-  padding: 20px;
-  background: url("assets/bg-hero-desktop.svg") hsl(193, 100%, 96%);
+    background: url("Assets/bg-hero-desktop.svg") hsl(193, 100%, 96%);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+
 .top-section {
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
-  margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-bottom: 100px;
 }
 
 .top-section img {
-  margin: 0 40px;
-  width: 185px;
-  height: 30px;
+    width: 120px;
+    height: 20px;
 }
-
 
 .top-section button {
-  padding: 0.5rem 3rem;
-  margin: 0 40px;
-  border: none;
-  border-radius: 20px;
-  font: inherit;
-  font-size: .8rem;
-  font-weight: 600;
-  background-color: #fff;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
 }
 
-.illustration-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-  padding-top: 20px;
-  margin-top: 30px;
+.top-illustration {
+    display: flex;
+    flex-direction: column;
 }
 
-
-.sub-section {
-  padding: 20px;
-  margin: 0 10px;
+.top-illustration .text {
+    /* width: 100%; */
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-.sub-section p {
-    font-size: 1rem;
+.top-illustration .image {
+    padding: 20px;
 }
 
-.sub-section h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+.top-illustration h1 {
+    margin-bottom: 20px;
 }
 
-.sub-section h2 {
-    margin: 20px 0;
+.top-illustration p {
+    margin-bottom: 20px;
 }
 
-.illustration-section img {
-  width: 600px;
-  /* max-width: 100%; */
+.top-illustration button {
+    padding: 10px 20px;
+    width: 250px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: hsl(322, 100%, 66%);
 }
 
-.sub-section button {
-  border: none;
-  border-radius: 20px;
-  padding: 0.7rem 3rem;
-  background-color: hsl(322, 100%, 66%);
-  color: #fff;
-  font: inherit;
-  font-size: .8rem;
-  font-weight: 600;
-  margin: 30px 0;
-}
-
-main {
-  padding: 30px;
+.top-illustration .image img {
+    width: 100%;
 }
 
 .main-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-  margin: 20px 40px;
-  border-radius: 8px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    margin: 20px auto;
+    width: 430px;
+    max-width: 93%;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 }
 
-.main-section.alternate {
-  flex-direction: row-reverse;
-}
-
-.main-section .sub-section img {
-  width: 500px;
-}
-
-@media (max-width: 1200px) {
-    .illustration-section img {
-        /* width: 400px; */
-        max-width: 500px;
-      }
-
-      .illustration-section h1 {
-        font-size: 1.5rem;
-      }
-}
-
-@media (max-width: 1000px) {
-  header {
-    padding: 10px 0 20px 0;
-  }
-
-  .top-section img {
-    margin: 0;
-  }
-
-  .top-section button {
-    margin: 0;
-    font-size: 1rem;
-    padding: 5px 23px;
-  }
-
-  .top-section {
-    margin-bottom: 20px;
-    padding: 0 20px;
-  }
-
-  .top-section img {
-    width: 150px;
-    height: 24px;
-  }
-  .illustration-section {
-    flex-direction: column;
+.sub-section {
+    margin: 20px;
+    margin-top: 0;
+    padding: 20px;
     text-align: center;
-    margin-top: 50px;
-  }
-
-  .illustration-section h1 {
-    font-size: 1.5rem;
-  }
-
-  .illustration-section .sub-section {
-    padding: 0;
-  }
-
-  .main-section {
-    margin: 30px 0;
-    padding: 20px 0;
-  }
-
-  .sub-section img {
-    max-width: 100%;
-  }
-
-  .main-section,
-  .main-section.alternate {
-    flex-direction: column;
-  }
 }
 
-@media (max-width: 450px) {
-  header {
-    background: url("Assets/bg-hero-mobile.svg") hsl(193, 100%, 96%);
-    padding: 5px 0 20px 0;
-  }
+.sub-section h2 {
+    margin-bottom: 20px;
+}
 
-  .top-section img {
-    margin-top: 5px;
-  }
+.sub-section p {
+    color: hsl(208, 11%, 55%);
+}
 
-  .top-section button {
-    margin: 0;
+.sub-section img {
+    width: 100%;
+}
+
+.get-started {
+    text-align: center;
+    padding: 10px;
+    margin: 40px auto;
+    width: 450px;
+    max-width: 100%;
     font-size: .8rem;
-  }
+    margin-top: -100px;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+}
 
-  .top-section img {
-    width: 100px;
-    height: 16px;
-  }
+.get-started h2 {
+    margin: 30px;
+    color: #000;
+}
 
-  .illustration-section h1 {
-    font-size: 1.2rem;
-  }
+.get-started button {
+    width: 250px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: hsl(322, 100%, 66%);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    margin-top: 150px;
+}
+
+.footer i {
+    margin-top: 6px;
+}
+
+.footer.one img  {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    width: 200px;
+    height: 33px;
+    margin-bottom: 20px;
+
+}
+
+.footer .icon-text {
+    margin: 20px 0;
+    display: flex;
+}
+.footer .icon-text p {
+display: inline;
+}
+
+.footer .icon-text i {
+    margin-right: 20px;
+}
+
+.footer.two p, .footer.three p {
+    margin: 10px 0;
+}
+
+.footer.four {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer.four i {
+    margin-bottom: 20px;
+    margin-right: 10px;
+    font-size: 2em;
+}
+
+.lay {
+    color: hsl(208, 11%, 55%);
+    background-color: hsl(192, 100%, 9%);
 }
