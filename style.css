@@ -19,19 +19,21 @@ header {
   display: flex;
   justify-content: space-between;
   text-align: left;
+  margin-top: 10px;
   /* margin: 20px 40px; */
 }
 
-.top-section img, .top-section button {
-    margin: 0 40px;
+.top-section img,
+.top-section button {
+  margin: 0 40px;
 }
 
 .top-section button {
-  padding: 5px 23px;
+  padding: 0.5rem 3rem;
   border: none;
   border-radius: 16px;
   font: inherit;
-  font-size: 14px;
+  font-size: 1.2rem;
   font-weight: 600;
   background-color: #fff;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
@@ -94,13 +96,19 @@ main {
 }
 
 @media (max-width: 700px) {
-    header {
-        padding: 20px 0;
-    }
+  header {
+    padding: 20px 0;
+  }
 
-    .top-section img, .top-section button {
-        margin: 0;
-    }
+  .top-section img {
+    margin: 0;
+  }
+
+  .top-section button {
+    margin: 0;
+    font-size: 1rem;
+    padding: 5px 23px;
+  }
 
   .top-section {
     margin-bottom: 20px;
@@ -116,7 +124,7 @@ main {
     text-align: center;
     margin-top: 50px;
   }
-  
+
   .illustration-section h1 {
     font-size: 1.5rem;
   }
@@ -141,20 +149,25 @@ main {
 }
 
 @media (max-width: 450px) {
-    header {
-        padding: 20px 0;
-    }
+  header {
+    background: url("Assets/bg-hero-mobile.svg") hsl(193, 100%, 96%);
+    padding: 20px 0;
+  }
 
-    .top-section img, .top-section button {
-        margin: 0 40px;
-    }
+  .top-section img {
+    margin-top: 5px;
+  }
 
-    .top-section img {
-        width: 100px;
-        height: 16px;
-      }
+  .top-section button {
+    margin: 0;
+  }
 
-      .illustration-section h1 {
-        font-size: 1.2rem;
-      }
+  .top-section img {
+    width: 100px;
+    height: 16px;
+  }
+
+  .illustration-section h1 {
+    font-size: 1.2rem;
+  }
 }
