@@ -21,6 +21,11 @@ h1, h2 {
     font-family: 'Poppins', sans-serif;
 }
 
+button {
+    cursor: pointer;
+    font-size: 11px;
+}
+
 
 .top-section {
     display: flex;
@@ -35,7 +40,7 @@ h1, h2 {
 }
 
 .top-section button {
-    padding: 5px 20px;
+    padding: 10px 20px;
     border-radius: 20px;
     border: none;
     font-family: 'Poppins', sans-serif;
@@ -49,7 +54,6 @@ h1, h2 {
 }
 
 .top-illustration .text {
-    /* width: 100%; */
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -187,7 +191,63 @@ display: inline;
     font-size: 2em;
 }
 
-.lay {
-    color: hsl(208, 11%, 55%);
-    background-color: hsl(192, 100%, 9%);
+@media (min-width: 820px) {
+    .top-section {
+        margin: 20px 30px 30px 30px;
+    }
+
+    .top-illustration {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .top-illustration .text {
+        width: 45%;
+    }
+
+    .top-illustration .image {
+        width: 55%;
+    }
+    .main-section {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .main-section.alter {
+        flex-direction: row-reverse;
+    }
+
+    .sub-section {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1100px) {
+    .top-section {
+        margin: 20px 30px 50px 30px;
+    }
+    .top-section img {
+        width: 200px;
+        height: 33px;
+    }
+
+    .top-illustration h1 {
+        font-size: 2.5rem;
+    }
+
+    .top-section button {
+        width: 150px;
+    }
+
+    .alter .sub-section {
+        margin-left:100px;
+        padding-left: 0;
+    }
+
+    .main-section .sub-section:first-of-type {
+        padding-right: 100px;
+    }
+
 }
