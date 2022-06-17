@@ -203,7 +203,7 @@ footer {
   font-size: 1.6rem;
   border-radius: 50%;
   padding: 0.7rem;
-  transition: color 0.2s ease-in-out, border-color 0.2s ease-in;
+  transition: color 0.2s ease-in, border-color 0.2s ease-in;
 }
 
 .four i:hover {
